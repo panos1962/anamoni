@@ -1,0 +1,4 @@
+panos[0-9]*
+*.swp
+local/*
+lacol/*
