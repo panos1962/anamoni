@@ -1,0 +1,60 @@
+#ipiresiaLista {
+	display: inline-block;
+	width: 400px;
+}
+
+.ipiresia {
+	margin: 8px 0 0 8px;
+	padding: 8px;
+
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	color: slategray;
+	text-shadow: 1px 0px 1px #000000;
+
+	background-color: #e6e4cc;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #c1bebe;
+	border-radius: 4px;
+
+	cursor: pointer;
+}
+
+.ipiresia:hover {
+	color: darkslategray;
+	text-shadow: 1px 0px 1px #06066d;
+	background-color: #f1ecba;
+	border-color: #8e8e8e;
+	cursor: pointer;
+}
+
+.oura {
+	display: none;
+	margin: 8px 0px 0px 40px;
+	padding: 4px 8px;
+
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 1.0px;
+	color: slategray;
+	text-shadow: 1px 0px 1px #000000;
+
+	background-color: #f9efd9;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #c1bebe;
+	border-radius: 4px;
+
+	cursor: pointer;
+}
+
+.oura:hover {
+	color: darkslategray;
+	text-shadow: 1px 0px 1px #06066d;
+	background-color: #f1ecba;
+	border-color: #8e8e8e;
+	cursor: pointer;
+}

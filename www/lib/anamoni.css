@@ -1,0 +1,14 @@
+html {
+	background-color: transparent;
+}
+
+body {
+	font-family: "Roboto", "Trebuchet MS", "Helvetica", sans-serif;
+	font-size: 18px;
+	background-color: #fffff0;
+
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
