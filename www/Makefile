@@ -24,5 +24,25 @@
 #
 ###############################################################################@
 
-all:
-	:
+PANDORA_DIR = ../mnt/pandora
+
+BUNDLE_JS = bundle.js
+PARAGOGA = $(BUNDLE_JS)
+
+BROWSERIFY_OPTS = -t envify -p tinyify
+BROWSERIFY_OPTS = -t envify
+
+.PHONY: all
+all: $(PARAGOGA)
+
+$(BUNDLE_JS): \
+	$(PANDORA_DIR)/lib/pandoraCore.js \
+	$(PANDORA_DIR)/lib/pandoraClient.js \
+	main.js \
+	../lib/anamoniClient.js \
+	../lib/anamoniCore.js
+	browserify $(BROWSERIFY_OPTS) -o $@ main.js
+
+.PHONY: cleanup
+cleanup:
+	@rm -f $(PARAGOGA)
