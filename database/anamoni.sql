@@ -20,6 +20,7 @@
 -- @DESCRIPTION END
 --
 -- @HISTORY BEGIN
+-- Updated: 2020-09-25
 -- Created: 2020-09-12
 -- @HISTORY END
 --
@@ -56,6 +57,21 @@ SET default_storage_engine = INNODB
 ;
 
 -------------------------------------------------------------------------------@
+
+-- Ο πίνακας "foreas" περιέχει τους φορείς που μπορούν να εξυπηρετηθούν από την
+-- εφαρμογή.
+
+CREATE TABLE `foreas` (
+	`id`		SMALLINT UNSIGNED NOT NULL COMMENT 'ID φορέα',
+	`perigrafi` 	VARCHAR(128) NOT NULL COMMENT 'Περιγραφή φορέα',
+
+	PRIMARY KEY (
+		`id`
+	) USING HASH
+)
+
+COMMENT = 'Πίνακας υπαλλήλων'
+;
 
 -- Ο πίνακας "ipalilos" περιέχει τους υπαλλήλους που εξυπηρετούν. Πρόκειται
 -- για ένα μικρό υποσύνολο των υπαλλήλων του Δήμου.
